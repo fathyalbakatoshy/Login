@@ -130,7 +130,7 @@ if (logBtn) {
           <h2 id="welcome" class="text-light">Welcome ${userList[i].name}</h2>
         `;
         sessionStorage.setItem("username", JSON.stringify(cartona));
-        location.href = "../welcome.html";
+        location.href = "welcome.html";
       }
     }
   });
