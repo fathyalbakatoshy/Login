@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  background-color: rgb(151, 217, 255); 
+  height: 100vh;
+}
+
+#sayWelcome {
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(220deg,
+      rgb(0, 172, 193, 1) 50%,
+      rgb(91, 54, 237) 80%);;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.waves {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+#display {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
